@@ -2,7 +2,7 @@
 #define SUNFLOWERSPANIEL_COLLISIONCOMPONENT_H
 
 
-#include <Box2D/Box2D.h>
+#include <box2d/box2d.h>
 #include <Falcon/2D/DebugRenderer/DebugRenderer.h>
 #include "../ObjectFactory/GameObject.h"
 

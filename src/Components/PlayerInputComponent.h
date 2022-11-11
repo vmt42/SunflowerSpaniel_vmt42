@@ -4,7 +4,7 @@
 
 #include <Falcon/InputOutput/InputManager.h>
 #include <SDL2/SDL.h>
-#include <Box2D/Box2D.h>
+#include <box2d/box2d.h>
 #include "Component.h"
 #include "BodyComponent.h"
 #include "../ObjectFactory/GameObject.h"

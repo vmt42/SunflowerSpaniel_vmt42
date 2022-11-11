@@ -1,6 +1,7 @@
 #ifndef SUNFLOWERSPANIEL_DEBUGGUI_H
 #define SUNFLOWERSPANIEL_DEBUGGUI_H
 
+#include <random>
 #include <ImGUI/imgui.h>
 #include <Falcon/2D/Lights/BasicLight.h>
 #include <Falcon/2D/Camera/Camera2D.h>

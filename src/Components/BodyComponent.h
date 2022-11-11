@@ -2,7 +2,7 @@
 #define SUNFLOWERSPANIEL_BODYCOMPONENT_H
 
 
-#include <Box2D/Box2D.h>
+#include <box2d/box2d.h>
 #include <glm/glm.hpp>
 #include <Falcon/2D/DebugRenderer/DebugRenderer.h>
 #include <TinyXML2/tinyxml2.h>
@@ -25,7 +25,7 @@ public:
     }
 
     void update(GameObject *obj, float /*deltaTime*/) override
-    { m_body->SetUserData(obj); };
+    { m_body->GetUserData().pointer = (uintptr_t) obj; };
 
     // Getters
     b2Body *getBody()

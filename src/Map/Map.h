@@ -5,7 +5,7 @@
 #include <Falcon/2D/TileSheet.h>
 #include <Falcon/2D/SpriteBatch/SpriteBatch.h>
 #include <noise.h>
-#include <Box2D/Box2D.h>
+#include <box2d/box2d.h>
 #include <random>
 #include "../ObjectFactory/GameObject.h"
 #include "../Pathfinding/SearchAlghorithms.h"

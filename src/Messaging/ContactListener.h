@@ -2,7 +2,7 @@
 #define SUNFLOWERSPANIEL_CONTACTLISTENER_H
 
 
-#include <Box2D/Box2D.h>
+#include <box2d/box2d.h>
 #include "../ObjectFactory/GameObject.h"
 #include "../Components/InteractiveComponent.h"
 
@@ -55,8 +55,8 @@ private:
         if (!(sensorA ^ sensorB))
             return false;
 
-        GameObject *entityA = static_cast<GameObject *>(fixtureA->GetBody()->GetUserData());
-        GameObject *entityB = static_cast<GameObject *>(fixtureB->GetBody()->GetUserData());
+        GameObject *entityA = reinterpret_cast<GameObject *>((fixtureA->GetBody()->GetUserData()).pointer);
+        GameObject *entityB = reinterpret_cast<GameObject *>((fixtureB->GetBody()->GetUserData()).pointer);
 
         if (sensorA)
         { //fixtureB must be an enemy aircraft
